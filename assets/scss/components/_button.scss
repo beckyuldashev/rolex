@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  padding: 1.25em 2em;
+  background-color: var(--button-color);
+  color: #fff;
+  font-weight: var(--font-medium);
+  transition: .3s;
+
+  &:hover {
+    background-color: var(--button-color-alt);
+  }
+
+  &--gray {
+    background-color: hsl(0, 0%, 75%);
+    color: var(--title-color);
+    
+    &:hover {
+      background-color: hsl(0, 0%, 63%);
+    }
+  }
+
+  &--small {
+    padding: 1em 1.5em;
+  }
+}

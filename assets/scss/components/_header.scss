@@ -5,4 +5,10 @@
   width: 100%;
   z-index: var(--z-fixed);
   background: transparent;
+  transition: .3s;
+}
+
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
 }
