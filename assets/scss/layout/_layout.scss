@@ -14,13 +14,25 @@
 
 .section {
   padding: 6.5rem 0 1rem;
-}
 
-.section__title {
-  position: relative;
-  margin-bottom: var(--mb-3);
-  font-size: var(--h3-font-size);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
+  &__title {
+    position: relative;
+    margin-bottom: var(--mb-3);
+    font-size: var(--h3-font-size);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: -1rem;
+      left: 0;
+      right: 0;
+      width: 67px;
+      height: 1px;
+      margin: 0 auto;
+      background-color: var(--first-color);
+    }
+  }
 }
