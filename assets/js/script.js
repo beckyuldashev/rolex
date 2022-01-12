@@ -73,3 +73,8 @@ const newSwiper = new Swiper('.new-swiper', {
     }
   },
 });
+
+/* =========== CURRENT DATE (year) ============ */
+const date = document.getElementById('date');
+const currentYear = new Date().getFullYear();
+date.textContent = currentYear;
