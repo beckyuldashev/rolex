@@ -43,3 +43,14 @@ const scrollHeader = () => {
 };
 
 window.addEventListener('scroll', scrollHeader);
+
+
+/* =========== SWIPER JS ============ */
+const testimonialSwiper = new Swiper('.testimonial-swiper', {
+  loop: 'true',
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
