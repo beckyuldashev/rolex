@@ -78,3 +78,39 @@ const newSwiper = new Swiper('.new-swiper', {
 const date = document.getElementById('date');
 const currentYear = new Date().getFullYear();
 date.textContent = currentYear;
+
+
+/* =========== SCROLL SECTIONS ACTIVE LINK ============ */
+const sections = document.querySelectorAll('section[id]');
+
+const scrollActive = () => {
+  const scrollY = window.scrollY;
+
+  sections.forEach(element => {
+    const sectionHeight = element.offsetHeight;
+    const sectionTop = element.offsetTop - 56;
+    const sectionId = element.getAttribute('id');
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document.querySelector('.nav__menu a[href*=' + sectionId +']').classList.add('active-link');
+    } else {
+      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link');
+    }
+  });
+}
+
+window.addEventListener('scroll', scrollActive);
+
+
+/* =========== SHOW SCROLL UP ============ */
+function scrollUp() {
+  const scrollUp = document.getElementById('scroll-up');
+
+  if (this.scrollY >= 400) {
+    scrollUp.classList.add('show-scroll');
+  } else {
+    scrollUp.classList.remove('show-scroll');
+  }
+}
+
+window.addEventListener('scroll', scrollUp);
