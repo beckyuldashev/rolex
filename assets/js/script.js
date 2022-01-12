@@ -114,3 +114,20 @@ function scrollUp() {
 }
 
 window.addEventListener('scroll', scrollUp);
+
+/* =========== SHOW CART ============ */
+const cart = document.getElementById('cart');
+const cartShop = document.getElementById('cart-shop');
+const cartClose = document.querySelector('.cart__close');
+
+if (cartShop) {
+  cartShop.addEventListener('click', () => {
+    cart.classList.add('show-cart');
+  });
+}
+
+if (cartClose) {
+  cartClose.addEventListener('click', () => {
+    cart.classList.remove('show-cart');
+  });
+}
