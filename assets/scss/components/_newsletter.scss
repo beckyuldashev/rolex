@@ -1,0 +1,32 @@
+.newsletter {
+  &__bg {
+    padding: 3rem 1.5rem;
+    row-gap: 2.5rem;
+    background-color: var(--first-color);
+    text-align: center;
+  }
+
+  &__title {
+    color: hsl(0, 0%, 15%);
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-1-5);
+  }
+
+  &__description {
+    color: hsl(0, 0%, 35%);
+  }
+
+  &__subscribe {
+    display: flex;
+    flex-direction: column;
+    row-gap: .75rem;
+  }
+
+  &__input {
+    padding: 1.25rem 1rem;
+    background-color: hsl(0, 0%, 94%);
+    color: hsl(0, 0%, 15%);
+    border: none;
+    outline: none;
+  }
+}
