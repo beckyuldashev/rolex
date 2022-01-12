@@ -45,12 +45,31 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader);
 
 
-/* =========== SWIPER JS ============ */
+/* =========== TESTIMONIAL SWIPER JS ============ */
 const testimonialSwiper = new Swiper('.testimonial-swiper', {
   loop: 'true',
 
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+});
+
+/* =========== NEW SWIPER JS ============ */
+const newSwiper = new Swiper('.new-swiper', {
+  loop: 'true',
+
+  breakpoints: {
+    576: {
+      slidesPerView: 2
+    },
+
+    768: {
+      slidesPerView: 3
+    },
+
+    1024: {
+      slidesPerView: 4
+    }
   },
 });
