@@ -57,6 +57,7 @@ const testimonialSwiper = new Swiper('.testimonial-swiper', {
 
 /* =========== NEW SWIPER JS ============ */
 const newSwiper = new Swiper('.new-swiper', {
+  spaceBetween: 24,
   loop: 'true',
 
   breakpoints: {
